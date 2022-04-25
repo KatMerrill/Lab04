@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="square_side">150dp</dimen>
+    <dimen name="smaller_side">100dp</dimen>
+    <dimen name="smallest_side">75dp</dimen>
+</resources>

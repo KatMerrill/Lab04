@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_pink"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout">
+
+<androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/first_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"
+        />
+
+    <TextView
+        android:id="@+id/topView"
+        android:text="@string/sample_text"
+        android:background="@color/light_blue"
+        android:layout_width="@dimen/square_side"
+        android:layout_height="@dimen/smaller_side"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@id/first_horizontal"
+        app:layout_constraintLeft_toLeftOf="@id/vertical_divide"
+        />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/vertical_divide"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topView"
+        />
+
+    <TextView
+        android:text="@string/sample_text"
+        android:background="@color/purple_200"
+        android:layout_width="@dimen/smaller_side"
+        android:layout_height="@dimen/smaller_side"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/vertical_divide"
+        />
+    <TextView
+        android:text="@string/sample_text"
+        android:background="@color/purple_200"
+        android:layout_width="@dimen/smaller_side"
+        android:layout_height="@dimen/smaller_side"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/vertical_divide"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
